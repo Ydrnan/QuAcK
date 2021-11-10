@@ -1,0 +1,8 @@
+[submodule "numgrid-tools/numgrid"]
+	path = numgrid-tools/numgrid
+	url = https://github.com/dftlibs/numgrid.git
+	branch = cpp-version
+[submodule "numgrid"]
+	path = numgrid
+	url = https://github.com/dftlibs/numgrid.git
+	branch = cpp-version
