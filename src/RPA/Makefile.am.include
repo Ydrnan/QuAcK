@@ -1,0 +1,12 @@
+SOURCES += \
+src/RPA/ACFDT_correlation_energy.f90 \
+src/RPA/ACFDT.f90 \
+src/RPA/URPA.f90 \
+src/RPA/ACFDT_Tmatrix.f90 \
+src/RPA/sort_ppRPA.f90 \
+src/RPA/ppRPA.f90 \
+src/RPA/RPA.f90 \
+src/RPA/unrestricted_ACFDT_correlation_energy.f90 \
+src/RPA/URPAx.f90 \
+src/RPA/RPAx.f90 \
+src/RPA/unrestricted_ACFDT.f90

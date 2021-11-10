@@ -1,0 +1,17 @@
+SOURCES += \
+src/HF/MOM.f90 \
+src/HF/RMOM.f90 \
+src/HF/RHF.f90 \
+src/HF/UHF.f90 \
+src/HF/mo_guess.f90 \
+src/HF/exchange_potential.f90 \
+src/HF/dipole_moment.f90 \
+src/HF/MOM_overlap.f90 \
+src/HF/density_matrix.f90 \
+src/HF/density.f90 \
+src/HF/RHF_stability.f90 \
+src/HF/huckel_guess.f90 \
+src/HF/print_UHF.f90 \
+src/HF/mix_guess.f90 \
+src/HF/print_RHF.f90 \
+src/HF/UHF_stability.f90

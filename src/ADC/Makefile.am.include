@@ -1,0 +1,3 @@
+SOURCES += \
+src/ADC/ADC.f90 \
+src/ADC/ADC2.f90

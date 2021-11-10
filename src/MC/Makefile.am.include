@@ -1,0 +1,15 @@
+SOURCES += \
+src/MC/MinMCMP2.f90 \
+src/MC/initialize_random_generator.f90 \
+src/MC/Newton.f90 \
+src/MC/AO_values.f90 \
+src/MC/AO_values_grid.f90 \
+src/MC/NDrift.f90 \
+src/MC/norm_trial.f90 \
+src/MC/MO_values_grid.f90 \
+src/MC/generate_shell.f90 \
+src/MC/transition_probability.f90 \
+src/MC/Green_function.f90 \
+src/MC/drift.f90 \
+src/MC/MCMP2.f90 \
+src/MC/optimize_timestep.f90

@@ -1,0 +1,24 @@
+SOURCES += \
+src/utils/overlap.f90 \
+src/utils/read_auxiliary_basis.f90 \
+src/utils/wrap_lapack.f90 \
+src/utils/sort.f90 \
+src/utils/chem_to_phys_ERI.f90 \
+src/utils/read_integrals.f90 \
+src/utils/spatial_to_spin_MO_energy.f90 \
+src/utils/read_integrals_sph.f90 \
+src/utils/dfac.f90 \
+src/utils/rij.f90 \
+src/utils/DIIS_extrapolation.f90 \
+src/utils/read_geometry.f90 \
+src/utils/orthogonalization_matrix.f90 \
+src/utils/read_dipole_integrals.f90 \
+src/utils/spatial_to_spin_ERI.f90 \
+src/utils/read_molecule.f90 \
+src/utils/phys_to_chem_ERI.f90 \
+src/utils/utils.f90 \
+src/utils/read_basis.f90 \
+src/utils/read_LR.f90 \
+src/utils/norm_coeff.f90 \
+src/utils/elements.f90 \
+src/utils/read_MOs.f90

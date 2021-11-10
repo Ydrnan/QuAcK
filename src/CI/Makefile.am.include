@@ -1,0 +1,6 @@
+SOURCES += \
+src/CI/CIS.f90 \
+src/CI/FCI.f90 \
+src/CI/D_correction.f90 \
+src/CI/CISD.f90 \
+src/CI/UCIS.f90

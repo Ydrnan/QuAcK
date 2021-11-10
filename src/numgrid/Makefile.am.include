@@ -1,0 +1,2 @@
+SOURCES += \
+src/numgrid/numgrid.f90

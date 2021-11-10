@@ -1,0 +1,10 @@
+SOURCES += \
+src/BasCor/basis_correction.f90 \
+src/BasCor/fc_srlda.f90 \
+src/BasCor/f_grid.f90 \
+src/BasCor/read_F12_integrals.f90 \
+src/BasCor/ec_srlda.f90 \
+src/BasCor/read_grid.f90 \
+src/BasCor/mu_grid.f90 \
+src/BasCor/quadrature_grid.f90 \
+src/BasCor/ecmd_lda.f90

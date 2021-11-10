@@ -1,0 +1,4 @@
+SOURCES += \
+src/QuAcK/QuAcK.f90 \
+src/QuAcK/read_options.f90 \
+src/QuAcK/read_methods.f90

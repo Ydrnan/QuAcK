@@ -1,0 +1,5 @@
+SOURCES += \
+src/MP/MP2.f90 \
+src/MP/MP3.f90 \
+src/MP/MP2F12.f90 \
+src/MP/UMP2.f90

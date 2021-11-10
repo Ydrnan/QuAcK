@@ -1,0 +1,14 @@
+SOURCES += \
+src/AOtoMO/AOtoMO_oooo.f90 \
+src/AOtoMO/exchange_matrix_AO_basis.f90 \
+src/AOtoMO/AOtoMO_oooa.f90 \
+src/AOtoMO/AOtoMO_integral_transform.f90 \
+src/AOtoMO/natural_orbital.f90 \
+src/AOtoMO/AOtoMO_transform.f90 \
+src/AOtoMO/Hartree_matrix_AO_basis.f90 \
+src/AOtoMO/AOtoMO_oooooo.f90 \
+src/AOtoMO/MOtoAO_transform.f90 \
+src/AOtoMO/Hartree_matrix_MO_basis.f90 \
+src/AOtoMO/Coulomb_matrix_MO_basis.f90 \
+src/AOtoMO/Coulomb_matrix_AO_basis.f90 \
+src/AOtoMO/AOtoMO_oovv.f90

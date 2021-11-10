@@ -1,0 +1,26 @@
+SOURCES += \
+src/GF/print_qsGF2.f90 \
+src/GF/qsGF2.f90 \
+src/GF/qsUGF2.f90 \
+src/GF/print_qsUGF2.f90 \
+src/GF/G0F3.f90 \
+src/GF/print_G0F3.f90 \
+src/GF/evUGF2.f90 \
+src/GF/BSE2_dynamic_perturbation_iterative.f90 \
+src/GF/self_energy_GF2_diag.f90 \
+src/GF/BSE2_B_matrix_dynamic.f90 \
+src/GF/print_evGF2.f90 \
+src/GF/G0F2.f90 \
+src/GF/BSE2_dynamic_perturbation.f90 \
+src/GF/print_UG0F2.f90 \
+src/GF/evGF2.f90 \
+src/GF/evGF3.f90 \
+src/GF/print_evUGF2.f90 \
+src/GF/unrestricted_self_energy_GF2.f90 \
+src/GF/UG0F2.f90 \
+src/GF/print_evGF3.f90 \
+src/GF/BSE2_A_matrix_dynamic.f90 \
+src/GF/print_G0F2.f90 \
+src/GF/BSE2.f90 \
+src/GF/unrestricted_self_energy_GF2_diag.f90 \
+src/GF/self_energy_GF2.f90

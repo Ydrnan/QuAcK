@@ -1,0 +1,18 @@
+SOURCES += \
+src/LR/linear_response_D_pp.f90 \
+src/LR/print_transition_vectors.f90 \
+src/LR/unrestricted_S2_expval.f90 \
+src/LR/unrestricted_oscillator_strength.f90 \
+src/LR/unrestricted_linear_response_A_matrix.f90 \
+src/LR/unrestricted_linear_response_B_matrix.f90 \
+src/LR/linear_response.f90 \
+src/LR/linear_response_pp.f90 \
+src/LR/print_excitation.f90 \
+src/LR/linear_response_B_pp.f90 \
+src/LR/print_unrestricted_transition_vectors.f90 \
+src/LR/oscillator_strength.f90 \
+src/LR/linear_response_Tmatrix.f90 \
+src/LR/linear_response_C_pp.f90 \
+src/LR/unrestricted_linear_response.f90 \
+src/LR/linear_response_A_matrix.f90 \
+src/LR/linear_response_B_matrix.f90
