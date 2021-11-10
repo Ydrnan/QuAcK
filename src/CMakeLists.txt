@@ -1,4 +1,4 @@
-add_executable(pouet QuAcK.f90 read_methods.f90 read_options.f90)
+add_executable(Canard QuAcK.f90 read_methods.f90 read_options.f90)
 
 add_subdirectory(ADC)
 add_subdirectory(AOtoMO)
@@ -16,7 +16,7 @@ add_subdirectory(numgrid)
 add_subdirectory(RPA)
 add_subdirectory(utils)
 
-target_link_libraries(pouet
+target_link_libraries(Canard
 	PRIVATE
 		ADC
 		AOtoMO
@@ -33,6 +33,4 @@ target_link_libraries(pouet
 		numgrid
 		RPA
 		utils	
-		BLAS_LIBRARIES
-		LAPACK_LIBRARIES
 		)

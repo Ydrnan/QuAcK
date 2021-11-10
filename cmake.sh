@@ -1,5 +1,5 @@
 #!/bin/sh
 
 ./autobuild.sh
-cmake -S. -Bbuild
-cmake --build build #-- VERBOSE=1
+FC=ifort cmake -S. -Bbuild
+cmake --build build -- VERBOSE=1
