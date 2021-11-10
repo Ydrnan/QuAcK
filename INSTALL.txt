@@ -1,7 +1,7 @@
 * define $QUACK_ROOT  
 * ninja
 * opam
- opam install ocamlc dune lacaml getopt zarith gmp alcotest 
+ opam install ocaml dune lacaml getopt zarith gmp alcotest 
 * cmake
 * wget
 * autoconf
