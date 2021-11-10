@@ -326,10 +326,11 @@ program QuAcK
     unrestricted = .true.
 
     call cpu_time(start_KS)
-    call eDFT(maxSCF_HF,thresh_HF,n_diis_HF,guess_type,mix,nNuc,ZNuc,rNuc,ENuc,nBas,nEl,nC, & 
-              nO,nV,nR,nShell,TotAngMomShell,CenterShell,KShell,DShell,ExpShell,            &
-              max_ang_mom,min_exponent,max_exponent,S,T,V,Hc,X,ERI_AO,dipole_int_AO,EUHF,eHF,cHF,PHF,Vxc)
-             
+    stop 'EDFT'
+!   call eDFT(maxSCF_HF,thresh_HF,n_diis_HF,guess_type,mix,nNuc,ZNuc,rNuc,ENuc,nBas,nEl,nC, & 
+!             nO,nV,nR,nShell,TotAngMomShell,CenterShell,KShell,DShell,ExpShell,            &
+!             max_ang_mom,min_exponent,max_exponent,S,T,V,Hc,X,ERI_AO,dipole_int_AO,EUHF,eHF,cHF,PHF,Vxc)
+!            
     call cpu_time(end_KS)
 
     t_KS = end_KS - start_KS
