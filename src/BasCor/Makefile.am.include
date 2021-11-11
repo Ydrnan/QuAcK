@@ -7,4 +7,6 @@ src/BasCor/ec_srlda.f90 \
 src/BasCor/read_grid.f90 \
 src/BasCor/mu_grid.f90 \
 src/BasCor/quadrature_grid.f90 \
+src/BasCor/LSD_SR.f \
+src/BasCor/dft_grid.f \
 src/BasCor/ecmd_lda.f90
