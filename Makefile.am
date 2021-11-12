@@ -34,3 +34,4 @@ include Makefile.am.numgrid
 
 #quack_LDADD = -lnumgrid #-lstdc++
 #quack_LDADD = /home/yannd/.local/lib/python3.7/site-packages/numgrid.cpython-37m-x86_64-linux-gnu.so
+
