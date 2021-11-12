@@ -1,0 +1,91 @@
+numgriddir = numgrid/build/lib
+
+NUMGRID_FILES = \
+		numgrid/CHANGES.rst \
+		numgrid/CITATION.cff \
+		numgrid/cmake/autocmake/configure.py \
+		numgrid/cmake/autocmake/external \
+		numgrid/cmake/autocmake/external/docopt.py \
+		numgrid/cmake/autocmake/external/__init__.py \
+		numgrid/cmake/autocmake/extract.py \
+		numgrid/cmake/autocmake/generate.py \
+		numgrid/cmake/autocmake/__init__.py \
+		numgrid/cmake/autocmake/interpolate.py \
+		numgrid/cmake/autocmake/parse_rst.py \
+		numgrid/cmake/autocmake/parse_yaml.py \
+		numgrid/cmake/autocmake.yml \
+		numgrid/cmake/compilers/Clang.CXX.cmake \
+		numgrid/cmake/custom/c++11.cmake \
+		numgrid/cmake/custom/fc_optional.cmake \
+		numgrid/cmake/custom/gen_version.py \
+		numgrid/cmake/custom/src.cmake \
+		numgrid/cmake/custom/test.cmake \
+		numgrid/cmake/custom/version.cmake \
+		numgrid/cmake/downloaded/autocmake_ccache.cmake \
+		numgrid/cmake/downloaded/autocmake_code_coverage.cmake \
+		numgrid/cmake/downloaded/autocmake_custom_color_messages.cmake \
+		numgrid/cmake/downloaded/autocmake_cxx.cmake \
+		numgrid/cmake/downloaded/autocmake_default_build_paths.cmake \
+		numgrid/cmake/downloaded/autocmake_definitions.cmake \
+		numgrid/cmake/downloaded/autocmake_GNU.CXX.cmake \
+		numgrid/cmake/downloaded/autocmake_Intel.CXX.cmake \
+		numgrid/cmake/downloaded/autocmake_python_interpreter.cmake \
+		numgrid/cmake/downloaded/autocmake_safeguards.cmake \
+		numgrid/cmake/README.md \
+		numgrid/cmake/update.py \
+		numgrid/CMakeLists.txt \
+		numgrid/LICENSE \
+		numgrid/MANIFEST.in \
+		numgrid/numgrid/AtomGrid.cpp \
+		numgrid/numgrid/AtomGrid.h \
+		numgrid/numgrid/becke_partitioning.cpp \
+		numgrid/numgrid/becke_partitioning.h \
+		numgrid/numgrid/bragg.cpp \
+		numgrid/numgrid/bragg.h \
+		numgrid/numgrid/CMakeLists.txt \
+		numgrid/numgrid/error_handling.h \
+		numgrid/numgrid/grid_radial.cpp \
+		numgrid/numgrid/grid_radial.h \
+		numgrid/numgrid/__init__.py \
+		numgrid/numgrid/interface_file_names.cfg.in \
+		numgrid/numgrid/lebedev/LICENSE \
+		numgrid/numgrid/lebedev/README \
+		numgrid/numgrid/lebedev/sphere_lebedev_rule.cpp \
+		numgrid/numgrid/lebedev/sphere_lebedev_rule.h \
+		numgrid/numgrid/numgrid.f90 \
+		numgrid/numgrid/numgrid.h \
+		numgrid/numgrid/parameters.h \
+		numgrid/numgrid/version.cpp \
+		numgrid/Pipfile \
+		numgrid/Pipfile.lock \
+		numgrid/README.rst \
+		numgrid/setup \
+		numgrid/setup.py \
+		numgrid/test/CMakeLists.txt \
+		numgrid/test/fetch_at_configure_step.in \
+		numgrid/test/fetch_git_repo.cmake \
+		numgrid/test/main.cpp \
+		numgrid/test/reference_grid \
+		numgrid/test/reference_grid/cc-pVDZ.txt \
+		numgrid/test/test_explicit.cpp \
+		numgrid/test/test_explicit.f90 \
+		numgrid/test/test.py \
+		numgrid/VERSION 
+
+$(numgriddir)/libnumgrid.a: $(NUMGRID_FILES)
+	cd numgrid ; \
+	./setup --fc="$(FC)" --cc="$(CC)" --cxx="$(CXX)" ; \
+	cd build ; \
+	$(MAKE) || (\
+	echo "" ; echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" ; \
+	echo "" ; \
+	echo "Installation of numgrid failed." ; \
+	echo "Please try to install numgrid by yourself" ; \
+	echo "and contact numgrid developers in case of failure:" ; \
+	echo "https://github.com/dftlibs/numgrid/tree/cpp-version" ; \
+	echo "" ; echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@" ; \
+	exit 1)
+
+EXTRA_DIST += $(NUMGRID_FILES)
+
+
