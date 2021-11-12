@@ -1,3 +1,28 @@
+cd qcaml-tools
+./install_qcaml.sh
+make
+# if :
+#File "qcaml/common/lib/bitstring.ml", line 258, characters 9-44:
+#258 |       |> (to_list [@tailcall]) ~accu:newlist
+#               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#Error (warning 51 [wrong-tailcall-expectation]): expected tailcall
+# then:
+# remove "[@tailcall]"
+# and reexecute make
+cd  qcaml
+opam install .
+opam install ocamlc dune lacaml getopt zarith gmp alcotest
+make
+cd ..
+make
+cd GoDuck
+make
+
+cd ..
+./autogen.sh
+./configure --without-numgrid
+make
+
 * define $QUACK_ROOT  
 * ninja
 * opam

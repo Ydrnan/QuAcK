@@ -187,7 +187,7 @@ directory.";
   | None -> ()
   ;
   
-  Unix.execv (quack_dir ^ "/bin/QuAcK") [| "QuAcK" |]
+  Unix.execv ("quack") [| "quack" |]
 
 
 
