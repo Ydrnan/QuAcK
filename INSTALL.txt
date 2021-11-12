@@ -5,6 +5,7 @@ vi qcaml/common/lib/bitstring.ml
 cd  qcaml
 opam install .
 opam install ocaml dune lacaml getopt zarith gmp alcotest
+eval $(opam env)
 make
 cd ..
 make
